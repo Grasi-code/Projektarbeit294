@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+    padding: 20px;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: auto;
+}
+
+.done {
+    border-radius: 20px;
+}

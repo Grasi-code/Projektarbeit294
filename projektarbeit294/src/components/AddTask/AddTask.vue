@@ -10,6 +10,7 @@
     </div>
 </template>
 <script src="./AddTask.js">
+    export default tasksGet()
 </script>
 <style scoped>
     @import './AddTask.css';

@@ -1,9 +1,10 @@
 <template>
     <div class="container">
-        <button @click="getInfos()">Hello</button>
+        <button @click="methods.tasksGet()">Hello</button>
         <ul>
-            <li v-repeat="infos">
-                {{title}}
+            <li v-for="item in infos" :key="item.id">
+                {{item.title}}
+                <input type="checkbox" class="done">
             </li>
         </ul>
     </div>
@@ -12,6 +13,7 @@
 
 
 <script src="./TodoItems.js">
+    import methods from '../AddTask/AddTask.js';
 </script>
 <style scoped>
     @import './TodoItems.css';
