@@ -1,6 +1,11 @@
 <template>
     <div class="container">
-        
+        <button @click="getInfos()">Hello</button>
+        <ul>
+            <li v-repeat="infos">
+                {{title}}
+            </li>
+        </ul>
     </div>
 </template>
 
