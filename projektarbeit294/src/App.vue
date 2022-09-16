@@ -1,6 +1,8 @@
 <template>
-  <AddTask></AddTask>
-  <TodoItems></TodoItems>
+  <div>
+    <AddTask></AddTask>
+    <TodoItems></TodoItems>
+  </div>
 </template>
 
 <script>
@@ -13,10 +15,12 @@ export default {
   components: {
     AddTask,
     TodoItems
-}
+  }
 }
 </script>
 
 <style>
-
+  body{
+    text-align: center;
+  }
 </style>

@@ -1,21 +1,16 @@
-.ulContainer{
-    list-style-type: none;
-}
-
-
 #formContainer{
     background-color: gray;
-    box-shadow: 3px 3px 3px 3px black;
+    box-shadow: 1px 1px 1px 1px black;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 20px;
 }
 
 body{
-    max-width: 300px;
     margin: 0 auto;
     background-color: white;
 }

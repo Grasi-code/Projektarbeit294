@@ -2,7 +2,7 @@ export default {
     name: 'TodoItems',
     data() {
         return {
-            infos: []
+            infos: [],
         }
     },
     methods: {
@@ -11,8 +11,10 @@ export default {
                 .then((res) => res.json())
                 .then((data) => {
                     this.infos = data;
-                    console.log(this.infos.title);
                 });
         }
     },
+    created: function(){
+        this.getInfos();
+    }
 }

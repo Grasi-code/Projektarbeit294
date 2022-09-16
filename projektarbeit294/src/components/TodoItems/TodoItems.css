@@ -7,9 +7,13 @@ li {
     text-align: left;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-row-gap: 20%;
     width: auto;
 }
 
-.done {
-    border-radius: 20px;
+.container2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: white;
+    margin-top: 10px;
 }
