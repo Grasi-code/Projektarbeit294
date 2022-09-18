@@ -3,7 +3,7 @@
         <form id="formContainer" @submit.prevent>
             <h2>Create New Task</h2>
             <label for="titleInput">Name</label>
-            <input v-model="createTaskName" name="title" id="titleInput">
+            <input maxlength="22" v-model="createTaskName" name="title" id="titleInput">
             <button @click="tasksPost()" type="submit">Create</button>
         </form>
     </div>

@@ -6,14 +6,38 @@ li {
     border-radius: 20px;
     text-align: left;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 15% 15%;
     grid-row-gap: 20%;
-    width: auto;
+    width: 100%;
+}
+
+.links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+ul {
+    display: inline;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: max-content;
+    width: max-content;
 }
 
 .container2 {
-    display: grid;
-    grid-template-rows: 50% 50%;
     background-color: white;
     margin-top: 10px;
+}
+
+.button {
+    margin-top: 0 !important;
+    width: min-content;
+    background-color: transparent;
+}
+
+.Img {
+    max-width: 20px;
 }

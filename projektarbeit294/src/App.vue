@@ -2,6 +2,7 @@
   <div>
     <AddTask></AddTask>
     <TodoItems></TodoItems>
+    <DeleteTask></DeleteTask>
   </div>
 </template>
 
@@ -15,7 +16,7 @@ export default {
   components: {
     AddTask,
     TodoItems
-  }
+}
 }
 </script>
 
