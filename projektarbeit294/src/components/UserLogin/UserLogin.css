@@ -1,5 +1,7 @@
 .containerLogin{
-    position: absolute;
-    top: 0;
-    right: 10px;
+
+}
+
+.loginInput{
+    margin-top: 10px;
 }

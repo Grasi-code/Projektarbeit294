@@ -1,6 +1,5 @@
 <template>
     <div class="container2">
-        <button @click="getInfosAuth()">GetAuth</button>
         <ul>
             <li v-for="item in infos" :key="item.id">
                 <button class="liContainer">
