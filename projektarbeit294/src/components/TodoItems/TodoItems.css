@@ -5,22 +5,15 @@ li {
     border-radius: 20px;
 }
 
-.liContainer{
+.liContainer {
     transition: all ease 400ms;
     display: grid;
-    grid-template-columns: 70% 15% 15%;
-    grid-row-gap: 20%;
+    grid-template-columns: 20% 60% 5% 5% 5%;
     width: 100%;
     background-color: gray;
-    text-align: left;
-    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     font-size: large;
-}
-
-.liContainer:hover{
-    transition: all ease 400ms;
-    background-color: rgb(107, 107, 107);
-    cursor: pointer;
 }
 
 .links {
@@ -53,3 +46,19 @@ ul {
 .Img {
     max-width: 20px;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: rgb(145, 145, 145);
+    box-shadow: 1px 1px 1px 1px;
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    top: 10vh;
+    right: 5vw;
+    left: 5vw;
+    border-radius: 20px;
+}
+
+.infoTitle {}
