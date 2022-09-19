@@ -15,9 +15,17 @@ export default {
                     this.infos = data;
                 });
         },
-        tasksDelete: function(id) {
+        getInfosAuth: function() {
+            fetch('http://127.0.0.1:3000/auth/cookie/tasks', { credentials: "include", headers: { 'Content-Type': 'application/json' } })
+                .then((res) => res.json())
+                .then((data) => {
+                    this.infos = data;
+                });
+        },
+        tasksDelete: function(id, title) {
             fetch('http://127.0.0.1:3000/task/' + id, { method: 'delete' })
                 .then(() => {
+                    alert('Task with title: "' + title + '" successfully deleted!')
                     window.location.reload();
                 })
         },

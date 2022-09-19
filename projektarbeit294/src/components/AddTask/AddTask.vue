@@ -5,6 +5,7 @@
             <label for="titleInput">Name</label>
             <input maxlength="22" v-model="createTaskName" name="title" id="titleInput">
             <button @click="tasksPost()" type="submit">Create</button>
+            <button @click="tasksPostAuth()" type="submit">CreateAuth</button>
         </form>
     </div>
 </template>

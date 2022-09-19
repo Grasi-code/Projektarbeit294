@@ -2,20 +2,22 @@
   <div>
     <AddTask></AddTask>
     <TodoItems></TodoItems>
-    <DeleteTask></DeleteTask>
+    <UserLogin></UserLogin>
   </div>
 </template>
 
 <script>
 import AddTask from '@/components/AddTask/AddTask.vue';
 import TodoItems from './components/TodoItems/TodoItems.vue';
+import UserLogin from '@/components/UserLogin/UserLogin.vue'
 
 
 export default {
   name: 'App',
   components: {
     AddTask,
-    TodoItems
+    TodoItems,
+    UserLogin
 }
 }
 </script>
