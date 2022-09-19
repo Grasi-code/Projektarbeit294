@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div v-if="loggedIn === 'true'" class="container">
         <form id="formContainer" @submit.prevent>
             <h2>Create New Task</h2>
             <label for="titleInput">Name</label>

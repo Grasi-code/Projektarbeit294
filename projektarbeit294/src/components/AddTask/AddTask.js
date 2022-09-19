@@ -4,7 +4,8 @@ export default {
         return {
             createTaskName: "",
             inputData: { title: this.createTaskName },
-            infos: []
+            infos: [],
+            loggedIn: null
         }
     },
     methods: {
@@ -17,5 +18,8 @@ export default {
                     window.location.reload()
                 });
         },
+    },
+    created: function() {
+        this.loggedIn = localStorage.getItem("loggedIn")
     }
 }
