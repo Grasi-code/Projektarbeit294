@@ -17,7 +17,7 @@ export default {
             fetch('http://127.0.0.1:3000/auth/cookie/tasks', { credentials: 'include', headers: { 'Content-Type': 'application/json' } })
                 .then((res) => {
                     if (res.status !== 200) {
-                        throw new Error(res.status)
+                        return
                     }
                     return res.json()
                 })

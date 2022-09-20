@@ -2,7 +2,7 @@
     <div class="container2">
         <ul>
             <li class="liContainer" v-for="item in infos" :key="item.id">
-                <p v-if="updating != item.id">{{item.title}}</p>
+                <p style="margin-left: 30px;" v-if="updating != item.id">{{item.title}}</p>
                 <input v-else maxlength="30" v-model="userUpdateInput">
                 <p></p>
                 <button @click="tasksDelete(item.id, item.title)" class="button"><img class="Img" src="../../assets/trash-can.png"></button>

@@ -25,6 +25,9 @@ body {
 #titleInput {
     border-radius: 15px;
     width: 500px;
+    background-color: rgb(155, 155, 155);
+    border-color: rgb(156, 156, 156);
+    font-size: large;
 }
 
 button {
