@@ -8,15 +8,8 @@
                 <button @click="tasksDelete(item.id, item.title)" class="button"><img class="Img" src="../../assets/trash-can.png"></button>
                 <button v-if="updating != item.id" @click="this.updating = item.id" class="button"><img class="Img" src="../../assets/pen.png"></button>
                 <button v-else @click="tasksUpdate(item.id)" class="button"><img class="Img" src="../../assets/save.png"></button>
-                <button @click="taskInfo(item.title)" class="button"><img class="Img" src="../../assets/information-button.png"></button>
             </li>
         </ul>
-        <div v-if="showInfo" class="wrapper">
-            <div id="{{element}}" class="listInfo">
-                <h1 class="infoTitle">{{element}}</h1>
-                <button @click="taskInfo()">X</button>
-            </div>
-        </div>
         <br>
         <div class="links">
             <a href="https://www.flaticon.com/free-icons/trash" title="icons">Icons created by Freepik - Flaticon</a>

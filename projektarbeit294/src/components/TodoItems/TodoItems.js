@@ -4,8 +4,6 @@ export default {
         return {
             infos: [],
             updating: null,
-            showInfo: false,
-            element: "",
             loggedIn: "",
             userUpdateInput: ""
         }
