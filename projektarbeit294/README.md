@@ -9,6 +9,10 @@ Email: 'example@example.ch'
 Password: 'm294'
 ```
 
+## Andere Dateien
+
+Das gitlog findet man im Ordner 'projektarbeit294' als gitlog.txt
+
 ## Project setup
 ```
 npm install
