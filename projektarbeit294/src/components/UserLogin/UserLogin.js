@@ -10,7 +10,8 @@ export default {
     },
     methods: {
         userLogin: function() {
-            fetch('http://127.0.0.1:3000/auth/cookie/login', { credentials: "include", method: "post", body: JSON.stringify({ email: this.loginEmail, password: this.loginPassword }), headers: { 'Content-Type': 'application/json', } })
+            if(this.loginPassword === 'm294'){
+                fetch('http://127.0.0.1:3000/auth/cookie/login', { credentials: "include", method: "post", body: JSON.stringify({ email: this.loginEmail, password: this.loginPassword }), headers: { 'Content-Type': 'application/json', } })
                 .then((res) => {
                     console.log("Logged in")
                     window.location.reload()
@@ -21,6 +22,9 @@ export default {
                         this.loggedIn = localStorage.getItem("loggedIn")
                     }
                 })
+            }else{
+                alert("Wrong Password")
+            }
         },
         userLogout: function() {
             fetch('http://127.0.0.1:3000/auth/cookie/logout', { credentials: "include", method: "post", body: JSON.stringify({ email: this.loginEmail, password: this.loginPassword }), headers: { 'Content-Type': 'application/json', } })

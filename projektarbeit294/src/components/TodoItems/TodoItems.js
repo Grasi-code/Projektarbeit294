@@ -6,15 +6,16 @@ export default {
             updating: null,
             showInfo: false,
             element: "",
-            localStorageInfo: []
+            loggedIn: "",
+            userUpdateInput: ""
         }
     },
     methods: {
-        test: function() {
-            this.localStorageInfo = localStorage.setItem("loggedIn", false)
-            console.log(this.localStorageInfo)
+        onlySpaces: function(str) {
+            return str.trim().length === 0;
         },
         getInfos: function() {
+            this.loggedIn = localStorage.getItem("loggedIn")
             fetch('http://127.0.0.1:3000/auth/cookie/tasks', { credentials: 'include', headers: { 'Content-Type': 'application/json' } })
                 .then((res) => {
                     if (res.status !== 200) {
@@ -25,9 +26,6 @@ export default {
                 .then((data) => {
                     this.infos = data;
                 })
-                .catch(function() {
-                    /* alert(error) */
-                })
         },
         tasksDelete: function(id, title) {
             fetch('http://127.0.0.1:3000/auth/cookie/task/' + id, { credentials: 'include', method: 'delete' })
@@ -37,15 +35,22 @@ export default {
                 })
         },
         tasksUpdate: function(id) {
-            fetch('http://127.0.0.1:3000/tasks', {
+            if(this.onlySpaces(this.userUpdateInput) == false && this.userUpdateInput.length != 0){
+                fetch('http://127.0.0.1:3000/tasks', {
                     method: 'put',
                     credentials: 'include',
                     headers: { 'Content-Type': 'application/json', },
                     body: JSON.stringify({ id: id, completed: false, title: this.userUpdateInput })
                 })
                 .then(() => {
+                    alert("Task successfully Updated")
                     window.location.reload()
                 })
+            }else if(this.userUpdateInput.length == 0){
+                this.updating = null
+            }else{
+                alert("Invalide Task Name")
+            }
         },
         taskInfo: function(title) {
             this.showInfo = !this.showInfo
@@ -54,5 +59,6 @@ export default {
     },
     created: function() {
         this.getInfos()
+        this.loggedIn = 'false'
     }
 }

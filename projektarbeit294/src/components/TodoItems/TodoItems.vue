@@ -12,20 +12,14 @@
             </li>
         </ul>
         <div v-if="showInfo" class="wrapper">
-            <div class="listInfo">
+            <div id="{{element}}" class="listInfo">
                 <h1 class="infoTitle">{{element}}</h1>
-                <button @click="test()">TEST</button>
+                <button @click="taskInfo()">X</button>
             </div>
         </div>
         <br>
         <div class="links">
-            <a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Trash icons created by Freepik - Flaticon</a>
-            <br>
-            <a href="https://www.flaticon.com/free-icons/pen" title="pen icons">Pen icons created by Freepik - Flaticon</a>
-            <br>
-            <a href="https://www.flaticon.com/free-icons/save" title="save icons">Save icons created by Freepik - Flaticon</a>
-            <br>
-            <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/trash" title="icons">Icons created by Freepik - Flaticon</a>
         </div>
     </div>
 </template>

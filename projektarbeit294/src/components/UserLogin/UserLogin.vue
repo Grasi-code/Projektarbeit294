@@ -1,13 +1,13 @@
 <template>
-    <div v-if="loggedIn === 'false'" class="containerLogin">
+    <div v-if="loggedIn !== 'true'" class="containerLogin">
         <h1>You have to log in to see your todos</h1>
-        <div class="loginInput">
+        <div @submit="userLogin()" class="loginInput">
             <form @submit.prevent>
                 <input style="margin-bottom: 10px;" type="email" placeholder="E-mail" v-model="loginEmail">
                 <br>
                 <input style="margin-bottom: 10px;" type="password" placeholder="Password" v-model="loginPassword">
                 <br>
-                <button style="margin-bottom: 10px;" type="submit" @click="userLogin()">Login</button>
+                <input style="margin-bottom: 10px;" type="submit" value="Login"/>
             </form>
         </div>
     </div>
