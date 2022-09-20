@@ -11,7 +11,7 @@ Password: 'm294'
 
 ## Andere Dateien
 
-Das gitlog findet man im Ordner 'projektarbeit294' als gitlog.txt
+Das gitlog findet man im root Verzeichnis als gitlog.txt
 
 ## Project setup
 ```
