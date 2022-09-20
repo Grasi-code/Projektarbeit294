@@ -1,0 +1,83 @@
+commit 9c5c25f938b28aafbaa43bb7b844916f4887ac9f
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Tue Sep 20 16:12:59 2022 +0200
+
+    changed styling, deleted useless readme file
+
+commit 971eb6d66ffb510afa89af84204b759ff49cc4c2
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Tue Sep 20 14:33:35 2022 +0200
+
+    Updated README and deleted taskInfo
+
+commit 67c6aa2467290705946506b7940faa557644ba12
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Tue Sep 20 13:41:44 2022 +0200
+
+    added Testing, Readme, and code cleanup
+
+commit 785d5ad86ba130bdef5f4c79a692d8a31ba977b3
+Author: MarcoAndrin <74789648+MarcoAndrin@users.noreply.github.com>
+Date:   Mon Sep 19 22:13:28 2022 +0200
+
+    added loggedIn on addTask
+
+commit c169c8a8f0967430fd2948ae445a32681035ee98
+Author: MarcoAndrin <74789648+MarcoAndrin@users.noreply.github.com>
+Date:   Mon Sep 19 21:52:50 2022 +0200
+
+    hide login page when logged in, added info popup
+
+commit bb21c0920cb15893c7c6aeb71c2c791ebe5901c7
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Mon Sep 19 16:44:48 2022 +0200
+
+    commit 2nd half of 19.09
+
+commit d23d4e37f9475233853b0e7c0601dd7425ed2073
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Mon Sep 19 11:40:43 2022 +0200
+
+    created login
+
+commit c929abaf0a8a0b092601900cd46db6b0692f19ea
+Author: MarcoAndrin <74789648+MarcoAndrin@users.noreply.github.com>
+Date:   Sun Sep 18 21:40:52 2022 +0200
+
+    added icons, update and delete, added some styling
+
+commit 994575e0a103531c90544474e836773fbb09ead4
+Author: Marco Odermatt <marco.odermatt@edu.tbz.ch>
+Date:   Fri Sep 16 14:16:40 2022 +0200
+
+    display added tasks
+
+commit adc27a4b7d6d31c33f960fa32ff5daacbd99924c
+Author: MarcoAndrin <74789648+MarcoAndrin@users.noreply.github.com>
+Date:   Wed Sep 14 22:26:03 2022 +0200
+
+    commit
+
+commit abd21fbf20bf6d2d301aed8fdb98d5d971035646
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Wed Sep 14 16:35:21 2022 +0200
+
+    last commit at 14.09
+
+commit 163aea0d933ced0fdca5fe80dd47612f55a9233f
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Wed Sep 14 16:05:44 2022 +0200
+
+    added post method
+
+commit 8d2867cd13b7d4fb36ca05ff41874e25a0a069b4
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Wed Sep 14 11:33:04 2022 +0200
+
+    added vue
+
+commit d79768a06914773a876d3b4cc7966bcece7c597e
+Author: marco <marco.odermatt56@gmail.com>
+Date:   Wed Sep 14 11:32:18 2022 +0200
+
+    Initial commit
